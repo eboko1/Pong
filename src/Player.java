@@ -16,6 +16,8 @@ public class Player {
     }
     public void update(){
 
+        y=y+yVelocity;
+
     }
 
     public void paint(Graphics g){
