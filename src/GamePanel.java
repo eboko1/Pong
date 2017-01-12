@@ -17,6 +17,8 @@ public GamePanel(){
     Timer timer=new Timer(50,this);
     timer.start();
 
+    this.addKeyListener(this);
+    this.setFocusable(true);
 }
 
 public void update(){
@@ -27,9 +29,11 @@ public void paintComponent(Graphics g){
     g.setColor(Color.YELLOW);
     g.fillRect(0,0,507,550);
 
-    ball.paint(g);
 
     player.paint(g);
+    ball.paint(g);
+
+
 }
 
     @Override
@@ -45,8 +49,8 @@ public void paintComponent(Graphics g){
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode()==KeyEvent.VK_UP){
-         player.setyVelocity(-4);
+        if (e.getKeyCode()== KeyEvent.VK_UP){
+         player.setYVelocity(-4);
 
         }
     }
