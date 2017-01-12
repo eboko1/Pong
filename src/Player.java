@@ -7,7 +7,7 @@ public class Player {
     private int y;
 
 
-    private  int yVelocity;
+    private  int yVelocity=0;
     private int width=40;
     private int height=50;
 
@@ -21,6 +21,11 @@ public class Player {
     }
 
     public void paint(Graphics g){
+        g.setColor(Color.PINK);
+        g.fillRect(75,y,width,height);
 
     }
-}//7
+    public void setyVelocity(int speed){
+        yVelocity = speed;
+    }
+}//6.4

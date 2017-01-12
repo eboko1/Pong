@@ -9,7 +9,7 @@ import java.awt.event.KeyListener;
  * Created by Vika on 31.12.2016.
  */
 public class GamePanel extends JPanel implements ActionListener, KeyListener{
-
+Player player = new Player();
 Ball ball = new Ball();
 
 
@@ -20,7 +20,7 @@ public GamePanel(){
 }
 
 public void update(){
-
+        player.update();
         ball.update();
   }
 public void paintComponent(Graphics g){
@@ -28,6 +28,8 @@ public void paintComponent(Graphics g){
     g.fillRect(0,0,507,550);
 
     ball.paint(g);
+
+    player.paint(g);
 }
 
     @Override
@@ -43,7 +45,10 @@ public void paintComponent(Graphics g){
 
     @Override
     public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode()==KeyEvent.VK_UP){
+         player.setyVelocity(-4);
 
+        }
     }
 
     @Override
