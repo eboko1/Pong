@@ -51,7 +51,8 @@ public void paintComponent(Graphics g){
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode()== KeyEvent.VK_UP){
          player.setYVelocity(-4);
-
+        } else if(e.getKeyCode() == KeyEvent.VK_DOWN){
+             player.setYVelocity(4);
         }
     }
 
