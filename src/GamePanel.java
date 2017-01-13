@@ -26,7 +26,7 @@ public void update(){
         ball.update();
   }
 public void paintComponent(Graphics g){
-    g.setColor(Color.YELLOW);
+    g.setColor(Color.BLACK);
     g.fillRect(0,0,507,550);
 
 
@@ -50,14 +50,16 @@ public void paintComponent(Graphics g){
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode()== KeyEvent.VK_UP){
-         player.setYVelocity(-3);
+         player.setYVelocity(-4);
         } else if(e.getKeyCode() == KeyEvent.VK_DOWN){
-             player.setYVelocity(3);
+             player.setYVelocity(4);
         }
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
+    int keyCode = e.getKeyCode();
+    if (keyCode==KeyEvent.VK_UP || keyCode == KeyEvent.VK_DOWN){}
 
     }
 }
