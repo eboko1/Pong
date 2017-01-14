@@ -17,12 +17,12 @@ public class Ball {
 
         if (x<0  ){
             xVelocity=4;
-        } else if(x>Pong.WINDOWS_WIDTH-size){
+        } else if(x>Pong.WINDOWS_WIDTH-size-7){
             xVelocity = -4;
         }
         if (y<0){
             yVelocity=4;
-        } else if (y>Pong.WINDOWS_HEIGHT-size){
+        } else if (y>Pong.WINDOWS_HEIGHT-size-33){
             yVelocity=-1;}
     }
     public void paint(Graphics g){
@@ -32,6 +32,10 @@ public class Ball {
       //  g.fillRect(x+40,y+40,20,20);
     }
     public void chackCollisionWith(Player player){
-        if (this.x > player.getX()&& this.x<player.getY()){}
+        if (this.x > player.getX()&& this.x<player.getY()+player.getWidth()){
+            if (this.y > player.getY() && this.y < player.getY()+player.getHeight()){
+                //ball has collide with player
+            }
+        }
     }
 }

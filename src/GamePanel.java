@@ -66,4 +66,4 @@ public void paintComponent(Graphics g){
     }
 
     }
-}
+}//7.2
