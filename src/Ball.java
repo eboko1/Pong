@@ -9,7 +9,7 @@ public class Ball {
 
     private int xVelocity = -4; // move
     private int yVelocity = 4;
-    private int size =5;
+    private int size =10;
 
     public void update(){
         x = x + xVelocity;
@@ -30,8 +30,8 @@ public class Ball {
         g.fillOval(x,y,size,size);
        // g.setColor(Color.RED);
       //  g.fillRect(x+40,y+40,20,20);
-
-
     }
-
+    public void chackCollisionWith(Player player){
+        if (this.x > player.getX()&& this.x<player.getY()){}
+    }
 }

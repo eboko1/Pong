@@ -25,7 +25,14 @@ public class Player {
         g.fillRect(75,y,width,height);
 
     }
-    public void setYVelocity(int speed){
+    public void setYVelocity(int speed) {
         yVelocity = speed;
+    }
+    public int getX() {
+        return 35;
+    }
+
+    public int getY() {
+        return y;
     }
 }//6.4

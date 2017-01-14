@@ -24,6 +24,8 @@ public GamePanel(){
 public void update(){
         player.update();
         ball.update();
+
+        ball.chackCollisionWith(player);
   }
 public void paintComponent(Graphics g){
     g.setColor(Color.BLACK);
