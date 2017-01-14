@@ -23,19 +23,24 @@ public class Ball {
         if (y<0){
             yVelocity=4;
         } else if (y>Pong.WINDOWS_HEIGHT-size-33){
-            yVelocity=-1;}
+            yVelocity=-4;}
     }
-    public void paint(Graphics g){
+        public void paint(Graphics g){
         g.setColor(Color.WHITE);
         g.fillOval(x,y,size,size);
-       // g.setColor(Color.RED);
-      //  g.fillRect(x+40,y+40,20,20);
-    }
-    public void chackCollisionWith(Player player){
-        if (this.x > player.getX()&& this.x<player.getY()+player.getWidth()){
+          // g.setColor(Color.RED);
+         //  g.fillRect(x+40,y+40,20,20);
+         }
+        public void reverseDirection(){
+            xVelocity = -xVelocity;
+         }
+
+        public void chackCollisionWith(Player player){
+        if (this.x > player.getX()&& this.x<player.getX()+player.getWidth()){
             if (this.y > player.getY() && this.y < player.getY()+player.getHeight()){
                 //ball has collide with player
-                System.out.println("Player Collision");
+                //System.out.println("Player Collision");
+                reverseDirection();
             }
         }
     }

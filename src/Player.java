@@ -22,7 +22,7 @@ public class Player {
 
     public void paint(Graphics g){
         g.setColor(Color.YELLOW);
-        g.fillRect(75,y,width,height);
+        g.fillRect(35,y,width,height);
 
     }
     public void setYVelocity(int speed) {
