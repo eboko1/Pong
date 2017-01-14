@@ -35,6 +35,7 @@ public class Ball {
         if (this.x > player.getX()&& this.x<player.getY()+player.getWidth()){
             if (this.y > player.getY() && this.y < player.getY()+player.getHeight()){
                 //ball has collide with player
+                System.out.println("Player Collision");
             }
         }
     }
