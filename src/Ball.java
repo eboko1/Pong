@@ -4,12 +4,12 @@ import java.awt.*;
  * Created by Vika on 31.12.2016.
  */
 public class Ball {
-    private int x=250;
-    private int y=250;
+    private int x=Pong.WINDOWS_WIDTH/2;
+    private int y=Pong.WINDOWS_HEIGHT/2;
 
     private int xVelocity = -4; // move
     private int yVelocity = 4;
-    private int size =50;
+    private int size =5;
 
     public void update(){
         x = x + xVelocity;
@@ -17,19 +17,19 @@ public class Ball {
 
         if (x<0  ){
             xVelocity=4;
-        } else if(x>500-size){
+        } else if(x>Pong.WINDOWS_WIDTH-size){
             xVelocity = -4;
         }
         if (y<0){
             yVelocity=4;
-        } else if (y>533-size){
+        } else if (y>Pong.WINDOWS_HEIGHT-size){
             yVelocity=-1;}
     }
     public void paint(Graphics g){
-        g.setColor(Color.blue);
+        g.setColor(Color.WHITE);
         g.fillOval(x,y,size,size);
-        g.setColor(Color.RED);
-        g.fillRect(x+40,y+40,20,20);
+       // g.setColor(Color.RED);
+      //  g.fillRect(x+40,y+40,20,20);
 
 
     }

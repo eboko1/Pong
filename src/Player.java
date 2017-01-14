@@ -4,12 +4,12 @@ import java.awt.*;
  * Created by Vika on 31.12.2016.
  */
 public class Player {
-    private int y=250;
+    private int y=Pong.WINDOWS_HEIGHT/2;
 
 
     private  int yVelocity=0;
-    private int width=30;
-    private int height=50;
+    private int width=15;
+    private int height=40;
 
     public Player(){}{
 
@@ -21,7 +21,7 @@ public class Player {
     }
 
     public void paint(Graphics g){
-        g.setColor(Color.PINK);
+        g.setColor(Color.YELLOW);
         g.fillRect(75,y,width,height);
 
     }

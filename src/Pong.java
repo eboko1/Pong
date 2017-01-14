@@ -4,8 +4,8 @@ import javax.swing.*;
  * Created by Vika on 31.12.2016.
  */
 public class Pong extends JFrame{
-    public final int WIDTH=500;
-    public final int HEIGHT=500;
+     final static int WINDOWS_WIDTH=407;
+     final static int WINDOWS_HEIGHT=283;
 
 
     public static void main (String args[]){
@@ -14,7 +14,7 @@ public class Pong extends JFrame{
 
 
     public Pong(){
-        setSize(WIDTH,HEIGHT);
+        setSize(WINDOWS_WIDTH,WINDOWS_HEIGHT);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

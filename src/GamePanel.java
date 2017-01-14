@@ -27,7 +27,7 @@ public void update(){
   }
 public void paintComponent(Graphics g){
     g.setColor(Color.BLACK);
-    g.fillRect(0,0,507,550);
+    g.fillRect(0,0,Pong.WINDOWS_WIDTH,Pong.WINDOWS_HEIGHT);
 
 
     player.paint(g);
