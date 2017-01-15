@@ -22,14 +22,14 @@ public GamePanel(){
     this.setFocusable(true);
 }
 
-public void update(){
+    public void update(){
         player.update();
         ball.update();
         computer.update();
 
         ball.chackCollisionWith(player);
   }
-public void paintComponent(Graphics g){
+    public void paintComponent(Graphics g){
     g.setColor(Color.BLACK);
     g.fillRect(0,0,Pong.WINDOWS_WIDTH,Pong.WINDOWS_HEIGHT);
 
@@ -37,10 +37,10 @@ public void paintComponent(Graphics g){
     player.paint(g);
     ball.paint(g);
     computer.paint(g);
-
-
-}
-
+    }
+    public Ball getBall(){
+        return ball;
+    }
     @Override
     public void actionPerformed(ActionEvent e) {
         update();

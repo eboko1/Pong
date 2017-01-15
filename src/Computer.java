@@ -18,7 +18,12 @@ public class Computer {
     }
 
     public void update(){
-
+    if(field.getBall().getY() <this.y){
+        // ball is above us
+        yVelocity=-3;
+    } else if(field.getBall().getY()>this.y){
+        yVelocity=3;
+    }
         y = y + yVelocity;
 
     }
