@@ -12,7 +12,9 @@ public class Computer {
     private  int yVelocity=0;
     private int width=15;
     private int height=40;
+
     public Computer(GamePanel game){
+        this.field=game;
     }
 
     public void update(){
