@@ -42,7 +42,7 @@ public GamePanel(){
     g.setColor(Color.WHITE);
    // g.drawLine(0,30,Pong.WINDOWS_WIDTH,30);
     g.drawLine(Pong.WINDOWS_WIDTH/2,0,Pong.WINDOWS_WIDTH/2,Pong.WINDOWS_HEIGHT);
-    g.drawOval(Pong.WINDOWS_WIDTH/2-25,Pong.WINDOWS_HEIGHT/2-25,50,50);
+    g.drawOval(Pong.WINDOWS_WIDTH/2-30,Pong.WINDOWS_HEIGHT/2-30,60,60);
     }
     public Ball getBall(){
         return ball;
@@ -75,4 +75,4 @@ public GamePanel(){
     }
 
     }
-}//9.1
+}//finish

@@ -9,20 +9,20 @@ public class Computer {
     private int y=Pong.WINDOWS_HEIGHT/2;
 
 
-    private  int yVelocity=0;
-    private int width=15;
-    private int height=40;
+    private  int yVelocity = 0;
+    private int width = 15;
+    private int height = 40;
 
     public Computer(GamePanel game){
-        this.field=game;
+        this.field = game;
     }
 
     public void update(){
     if(field.getBall().getY() <this.y){
         // ball is above us
-        yVelocity=-3;
+        yVelocity = -3;
     } else if(field.getBall().getY()>this.y){
-        yVelocity=3;
+        yVelocity = 3;
     }
         y = y + yVelocity;
 
