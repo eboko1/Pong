@@ -28,6 +28,7 @@ public GamePanel(){
         computer.update();
 
         ball.chackCollisionWith(player);
+        ball.chackCollisionWith(computer);
   }
     public void paintComponent(Graphics g){
     g.setColor(Color.BLACK);
@@ -69,4 +70,4 @@ public GamePanel(){
     }
 
     }
-}//8
+}//9.1

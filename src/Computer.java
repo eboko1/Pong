@@ -30,12 +30,12 @@ public class Computer {
 
     public void paint(Graphics g){
         g.setColor(Color.YELLOW);
-        g.fillRect(Pong.WINDOWS_WIDTH-(35-width),y,width,height);
+        g.fillRect(Pong.WINDOWS_WIDTH - 7 - (35-width),y,width,height);
 
     }
 
     public int getX() {
-        return 35;
+        return Pong.WINDOWS_WIDTH - 7 -(35-width);
     }
 
     public int getY() {

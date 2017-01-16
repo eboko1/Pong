@@ -44,6 +44,15 @@ public class Ball {
             }
         }
     }
+    public void chackCollisionWith(Computer computer){
+        if (this.x > computer.getX()&& this.x<computer.getX()+computer.getWidth()){
+            if (this.y > computer.getY() && this.y < computer.getY()+computer.getHeight()){
+                //ball has collide with computer
+                //System.out.println("Player Collision");
+                reverseDirection();
+            }
+        }
+    }
     public int getX() {
         return x;
     }
