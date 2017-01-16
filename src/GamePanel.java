@@ -41,6 +41,7 @@ public GamePanel(){
 
     g.setColor(Color.WHITE);
     g.drawLine(0,30,Pong.WINDOWS_WIDTH,30);
+    g.drawLine(Pong.WINDOWS_WIDTH/2,30,Pong.WINDOWS_WIDTH/2,Pong.WINDOWS_HEIGHT);
     }
     public Ball getBall(){
         return ball;
