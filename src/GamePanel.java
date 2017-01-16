@@ -38,6 +38,9 @@ public GamePanel(){
     player.paint(g);
     ball.paint(g);
     computer.paint(g);
+
+    g.setColor(Color.WHITE);
+    g.drawLine(0,30,Pong.WINDOWS_WIDTH,30);
     }
     public Ball getBall(){
         return ball;
