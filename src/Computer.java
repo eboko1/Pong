@@ -29,7 +29,7 @@ public class Computer {
     }
 
     public void paint(Graphics g){
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.WHITE);
         g.fillRect(Pong.WINDOWS_WIDTH - 7 - (35-width),y,width,height);
 
     }
